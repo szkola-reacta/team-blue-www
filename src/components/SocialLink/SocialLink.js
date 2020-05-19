@@ -5,7 +5,7 @@ import './css/fontello.css';
 export const socialClasses = {
     github: 'icon-github-circled',
     linkedin: 'icon-linkedin-squared'
-}
+};
 
 function SocialLink({ url,type }) {
     return (
