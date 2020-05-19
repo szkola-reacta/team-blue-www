@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './fontello/css/fontello.css';
+import './SocialLink.css';
 
 export const socialClasses = {
     github: 'icon-github-circled',
