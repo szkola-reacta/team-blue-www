@@ -7,9 +7,8 @@ import placeholder from './img/placeholder.png';
 function TeamMember({ firstName, lastName, photoUrl, info, links }) {
     const parseLinks = (linkElement) => {
         let linkType = '';
-        console.log(linkElement);
+
         if(typeof(linkElement) !== "object") {
-            console.log('its object');
             for(let type of Object.keys(socialClasses))
                 if(linkElement.includes(type))
                     linkType = type;
@@ -17,9 +16,9 @@ function TeamMember({ firstName, lastName, photoUrl, info, links }) {
                 type: linkType,
                 url: linkElement
             }
-        }
-        else
+        } else {
             return linkElement;
+        }
     }
 
     return (
