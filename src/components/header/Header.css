@@ -1,11 +1,11 @@
-.Header {
+.header {
    margin-left: auto;
    margin-right: auto;
    height: 50px;
    background-color: #f0e7e9;
 }
 
-#Square {
+#square {
    display: inline-block;
    text-align: center;
    width: 50px;
@@ -17,14 +17,14 @@
    padding-bottom: 50px;
 }
 
-#Team {
+#team {
    display: inline-block;
    color: blue;
    font: bold;
    font-size: 30px
 }
 
-.ButtonNav {
+.button-nav {
    text-align: center;
    height: 40px;
    padding-top: 10px;
