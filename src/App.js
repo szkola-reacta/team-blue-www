@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Header from './components/Header';
 import Content from './components/Content';
@@ -42,7 +42,7 @@ const App = () => {
   }];
 
   return (
-    <div>
+    <Fragment>
       <Header />
       <Content>
         <CatchWord>
@@ -55,7 +55,7 @@ const App = () => {
         <TeamMembers members={members} />
       </Content>
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 
