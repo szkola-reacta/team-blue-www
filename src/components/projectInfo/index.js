@@ -1,3 +1,3 @@
-import ProjectInfo from './projectInfo'
+import ProjectInfo from './ProjectInfo'
 
 export default ProjectInfo

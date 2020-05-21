@@ -5,7 +5,7 @@ import './Content.scss';
 
 function Content(props) {
   return (
-    <Container className="content" fluid>
+    <Container className="content p-0" fluid>
       {props.children}
     </Container>
   );

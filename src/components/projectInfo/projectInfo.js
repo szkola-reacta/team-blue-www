@@ -1,23 +1,30 @@
 import React from 'react'
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Image from 'react-bootstrap/Image';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 
-import {  Row, Col, Image} from 'react-bootstrap'
+import './ProjectInfo.scss';
 
-const ProjectInfo = () => {
+const ProjectInfo = ({ imageUrl, projectTitle, projectDescription, projectUrl }) => {
 	return (
-		<Row className="no-gutters bg-light position-relative align-items-center">
-			<Col className="col-md-2"></Col>
-			<Col className="col-md-4 p-4 p-md-4">
-				<Image src="https://www.polska.travel/images/pl-PL/glowne-miasta/gdansk/gdansk_motlawa_1170.jpg" className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..." />
-			</Col>
-			<Col className="col-md-4 pl-md-4">
-				<Row className="justify-content-center p-4">
-					<h3 className="mt-0">Project Name</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate eligendi, nisi consequatur ratione eum nam accusantium quisquam molestias, dolorum ducimus officiis repellendus non expedita maxime libero reprehenderit provident voluptates autem.</p>
-					<a href="#" className="stretched-link">Go to project</a>
-				</Row>
-			</Col>
-			<Col className="col-md-2"></Col>
-		</Row>
+		<Container className="mt-5 mb-5">
+			<Row className="no-gutters position-relative align-items-center">
+				<Col xs={12} md={6} className="p-4 p-md-6">
+					<Image src={imageUrl} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..." />
+				</Col>
+				<Col xs={12} md={6} className="pl-md-6">
+					<Row className="justify-content-center p-4">
+						<h3 className="mt-0">{projectTitle}</h3>
+						<p>{projectDescription}</p>
+						<Button href={projectUrl} variant="primary" size="lg" block>
+							Go to project
+						</Button>
+					</Row>
+				</Col>
+			</Row>
+		</Container>
 	)
 }
 

@@ -1,5 +1,13 @@
+@import '../../styles/mixins';
+
 .catch-word {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16px;
     text-align: center;
 }

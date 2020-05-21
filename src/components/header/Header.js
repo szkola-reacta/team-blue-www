@@ -9,13 +9,13 @@ function Header() {
    return (
       <Container className="header" fluid>
          <Row className="h-100">
-            <Col className="header-logo" sm={4}>
+            <Col className="header-logo" sm={12} md={4}>
                <div className="header-logo-symbol">
                   <span>B</span>
                </div>
                <div className="header-logo-text">TEAM</div>
             </Col>
-            <Col className="header-nav" sm={8}>
+            <Col className="header-nav" md={8}>
                <div className="header-nav-btn">Home</div>
                <div className="header-nav-btn">Projects</div>
                <div className="header-nav-btn">Members</div>
