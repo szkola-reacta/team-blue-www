@@ -9,9 +9,12 @@ function TeamMember({ firstName, lastName, photoUrl, info, links }) {
         let linkType = '';
 
         if(typeof(linkElement) !== "object") {
-            for(let type of Object.keys(socialClasses))
-                if(linkElement.includes(type))
+            for(let type of Object.keys(socialClasses)) {
+                if(linkElement.includes(type)) {
                     linkType = type;
+                }
+            }
+
             return {
                 type: linkType,
                 url: linkElement
@@ -21,13 +24,15 @@ function TeamMember({ firstName, lastName, photoUrl, info, links }) {
         }
     }
 
+    const socialLinks = links.map((element,index) =>
+                        <SocialLink key={`social-link-${index}`} {...parseLinks(element)} />);
+
     return (
         <div className="team-member">
             <img src={photoUrl} alt="avatar" />
             <div className="text-wrapper">
                 <h3>{firstName} {lastName}
-                    {links.map((element,index) =>
-                        <SocialLink key={`social-link-${index}`} {...parseLinks(element)}/>)}
+                    {socialLinks}
                 </h3>
                 <p>{info}</p>
             </div>

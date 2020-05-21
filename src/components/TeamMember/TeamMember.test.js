@@ -2,18 +2,18 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import {socialClasses} from '../SocialLink';
-import TeamMember from './TeamMebmer.js';
+import TeamMember from './TeamMember.js';
 
 test('render test member', () => {
-    const data = [{
+    const data = [
+        {
             type: 'linkedin',
             url: 'https://linkedin.com/123'
         },{
             type: 'github',
             url: 'https://github.com/123'
-        },'https://linkedin.com/123',
-        'https://github.com/123'
-    ];
+        },  'https://linkedin.com/123',
+            'https://github.com/123'];
 
     const results = ['linkedin','github','linkedin','github'];
 
