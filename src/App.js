@@ -4,6 +4,7 @@ import Header from './components/header';
 import Content from './components/content';
 import Footer from './components/footer';
 import CatchWord from './components/CatchWord';
+import ProjectInfo from './components/projectInfo';
 import './App.scss';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
           <p>Are we going to achieve that?</p>
           <b>SURE WE DO!</b>
         </CatchWord>
+        <ProjectInfo />
       </Content>
       <Footer />
     </div>
