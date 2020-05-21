@@ -3,6 +3,7 @@ import Header from './components/header';
 import Content from './components/content';
 import Footer from './components/footer';
 import CatchWord from './components/CatchWord';
+import ProjectInfo from './components/projectInfo'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,6 +20,7 @@ const App = () => {
             <b>SURE WE DO!</b>
           </div>
         </CatchWord>
+        <ProjectInfo />
       </Content>
       <Footer />
     </div>
