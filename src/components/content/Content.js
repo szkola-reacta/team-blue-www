@@ -6,11 +6,12 @@ import Col from 'react-bootstrap/Col';
 import './Content.css';
 
 function Content(props) {
+  console.log('Content', props);
   return (
     <Container className="content" fluid="true">
       <Row>
         <Col>
-          { props.children }
+          {props.children}
         </Col>
       </Row>
     </Container>
