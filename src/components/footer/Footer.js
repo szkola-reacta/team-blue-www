@@ -10,7 +10,7 @@ function Footer() {
     <Container className="footer" fluid>
       <Row>
         <Col>
-          Copyright &copy; by Blue Team 2020
+          Copyright &copy; Blue Team 2020
         </Col>
       </Row>
     </Container>

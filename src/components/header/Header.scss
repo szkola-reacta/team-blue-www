@@ -5,6 +5,7 @@
    background-color: $bg-color;
    border-bottom: 1px solid $border-color;
    color: white;
+   z-index: 1;
 
    @include md {
       position: sticky;
@@ -55,16 +56,21 @@
       display: none;
       text-align: center;
       margin: 16px 32px;
-      cursor: pointer;
       position: relative;
       border: 1px solid transparent;
       font-weight: 500;
+      color: white;
+
+      &:visited {
+         color: white;
+      }
 
       @include md {
          display: inline-block;
 
          &:hover {
             border-bottom: 1px solid $main-color;
+            text-decoration: none;
          }
 
          &:after {

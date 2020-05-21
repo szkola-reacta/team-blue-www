@@ -16,9 +16,9 @@ function Header() {
                <div className="header-logo-text">TEAM</div>
             </Col>
             <Col className="header-nav" md={8}>
-               <div className="header-nav-btn">Home</div>
-               <div className="header-nav-btn">Projects</div>
-               <div className="header-nav-btn">Members</div>
+               <a href="/" className="header-nav-btn">Home</a>
+               <a href="#project-info" className="header-nav-btn">Project</a>
+               <a href="#team-members" className="header-nav-btn">Members</a>
             </Col>
          </Row>
       </Container>

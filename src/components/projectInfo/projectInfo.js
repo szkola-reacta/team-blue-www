@@ -9,7 +9,7 @@ import './ProjectInfo.scss';
 
 const ProjectInfo = ({ imageUrl, projectTitle, projectDescription, projectUrl }) => {
 	return (
-		<Container className="mt-5 mb-5">
+		<Container className="project-info mt-5 mb-5" id="project-info">
 			<Row className="no-gutters position-relative align-items-center">
 				<Col xs={12} md={6} className="p-4 p-md-6">
 					<Image src={imageUrl} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..." />
