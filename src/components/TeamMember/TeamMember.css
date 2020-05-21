@@ -1,0 +1,13 @@
+.team-member {
+    display: flex;
+    width: 48%;
+    padding-left: 2%;
+}
+
+.team-member img {
+    height: 100%;
+}
+
+.team-member .text-wrapper {
+    flex: 2;
+}
