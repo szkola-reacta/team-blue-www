@@ -1,10 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
+import './CatchWord.scss';
 
 function CatchWord(props) {
   return (
-    <Fragment>
+    <div className="catch-word">
       {props.children}
-    </Fragment>
+    </div>
   );
 }
 

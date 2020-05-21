@@ -3,18 +3,23 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import './Header.css';
+import './Header.scss';
 
 function Header() {
    return (
-      <Container className="header" fluid="true">
-         <Row>
-            <Col sm={{ span: 1.5, offset: 1 }}>
-               <div id="square">B</div> <div id="team">TEAM</div>
+      <Container className="header" fluid>
+         <Row className="h-100">
+            <Col className="header-logo" sm={4}>
+               <div className="header-logo-symbol">
+                  <span>B</span>
+               </div>
+               <div className="header-logo-text">TEAM</div>
             </Col>
-            <Col className="button-nav" sm={{ span: 2, offset: 3 }}>Home</Col>
-            <Col className="button-nav" sm={2}>Project</Col>
-            <Col className="button-nav" sm={2}>Members</Col>
+            <Col className="header-nav" sm={8}>
+               <div className="header-nav-btn">Home</div>
+               <div className="header-nav-btn">Projects</div>
+               <div className="header-nav-btn">Members</div>
+            </Col>
          </Row>
       </Container>
    );
