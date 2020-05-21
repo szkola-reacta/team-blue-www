@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {  Row , Col , Image} from 'react-bootstrap'
+import {  Row, Col, Image} from 'react-bootstrap'
 
 const ProjectInfo = () => {
 	return (

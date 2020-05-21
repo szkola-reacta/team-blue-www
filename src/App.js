@@ -1,6 +1,6 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
+import './App.css'
 import ProjectInfo from './components/projectInfo'
 
 function App() {
