@@ -5,8 +5,9 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 import CatchWord from './components/CatchWord';
 import ProjectInfo from './components/ProjectInfo';
-import './App.scss';
 import TeamMembers from './components/TeamMembers/TeamMembers';
+
+import './App.scss';
 
 const App = () => {
   const projectInfo = {
