@@ -5,7 +5,7 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 import CatchWord from './components/CatchWord';
 import ProjectInfo from './components/ProjectInfo';
-import TeamMembers from './components/TeamMembers/TeamMembers';
+import TeamMembers from './components/TeamMembers';
 
 import './App.scss';
 
