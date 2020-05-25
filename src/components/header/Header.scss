@@ -1,0 +1,88 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.header {
+   background-color: $bg-color;
+   border-bottom: 1px solid $border-color;
+   color: white;
+   z-index: 1;
+
+   @include md {
+      position: sticky;
+      top: 0;
+      height: 70px;
+   }
+}
+
+.header-logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+
+   .header-logo-symbol {
+      width: 50px;
+      height: 50px;
+      background-color: $main-color;
+      color: white;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 46px;
+   }
+
+   .header-logo-text {
+      display: inline-block;
+      color: $main-color;
+      font-weight: 1000;
+      font-size: 30px;
+   }
+
+   @include md {
+      justify-content: start;
+   }
+}
+
+.header-nav {
+   align-items: center;
+   justify-content: flex-end;
+
+   @include md {
+      display: flex !important;
+   }
+
+   .header-nav-btn {
+      display: none;
+      text-align: center;
+      margin: 16px 32px;
+      position: relative;
+      border: 1px solid transparent;
+      font-weight: 500;
+      color: white;
+
+      &:visited {
+         color: white;
+      }
+
+      @include md {
+         display: inline-block;
+
+         &:hover {
+            border-bottom: 1px solid $main-color;
+            text-decoration: none;
+         }
+
+         &:after {
+            content: '|';
+            margin: 0 32px;
+            position: absolute;
+         }
+
+         &:last-child:after  {
+            content: '';
+            display: none;
+         }
+      }
+   }
+}

@@ -2,10 +2,10 @@
 # Team BLUE
 
 ## Members
-- Kamil Zieliński
+- Michał Hajok
 - Piotr Łosiak
 - Marcin Wijas
-- Michał Hajok
+- Kamil Zieliński
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

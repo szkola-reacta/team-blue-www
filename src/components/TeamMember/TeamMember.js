@@ -1,16 +1,16 @@
 import React from 'react';
 
-import SocialLink,{socialClasses} from '../SocialLink';
-import './TeamMember.css';
+import SocialLink, { socialClasses } from '../SocialLink';
+import './TeamMember.scss';
 import placeholder from './img/placeholder.png';
 
 function TeamMember({ firstName, lastName, photoUrl, info, links }) {
     const parseLinks = (linkElement) => {
         let linkType = '';
 
-        if(typeof(linkElement) !== "object") {
-            for(let type of Object.keys(socialClasses)) {
-                if(linkElement.includes(type)) {
+        if (typeof (linkElement) !== "object") {
+            for (let type of Object.keys(socialClasses)) {
+                if (linkElement.includes(type)) {
                     linkType = type;
                 }
             }
@@ -24,16 +24,16 @@ function TeamMember({ firstName, lastName, photoUrl, info, links }) {
         }
     }
 
-    const socialLinks = links.map((element,index) =>
-                        <SocialLink key={`social-link-${index}`} {...parseLinks(element)} />);
+    const socialLinks = links.map((element, index) =>
+        <SocialLink key={`social-link-${index}`} {...parseLinks(element)} />);
 
     return (
         <div className="team-member">
-            <img src={photoUrl} alt="avatar" />
-            <div className="text-wrapper">
-                <h3>{firstName} {lastName}
-                    {socialLinks}
-                </h3>
+            <div className="team-member-avatar">
+                <img src={photoUrl} alt="avatar" />
+            </div>
+            <div className="team-member-info">
+                <h3>{firstName} {lastName} {socialLinks}</h3>
                 <p>{info}</p>
             </div>
         </div>

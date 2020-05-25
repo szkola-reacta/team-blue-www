@@ -1,10 +1,17 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
+import './CatchWord.scss';
+import Background from './bg.jpg';
 
 function CatchWord(props) {
+  const catchWordStyle = {
+    backgroundImage: `url(${Background})`
+  };
+
   return (
-    <Fragment>
+    <div style={catchWordStyle} className="catch-word">
       {props.children}
-    </Fragment>
+    </div>
   );
 }
 
