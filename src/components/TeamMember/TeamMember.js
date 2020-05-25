@@ -41,7 +41,8 @@ function TeamMember({ firstName, lastName, photoUrl, info, links }) {
 }
 
 TeamMember.defaultProps = {
-    photoUrl: placeholder
+    photoUrl: placeholder,
+    links: []
 }
 
 export default TeamMember;
