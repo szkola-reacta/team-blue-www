@@ -7,6 +7,8 @@ import CatchWord from './components/CatchWord';
 import ProjectInfo from './components/ProjectInfo';
 import TeamMembers from './components/TeamMembers';
 
+import KamilZImg from './images/kamilz.jpeg';
+
 import './App.scss';
 
 const App = () => {
@@ -37,8 +39,8 @@ const App = () => {
   }, {
     firstName: 'Kamil',
     lastName: 'Zieliński',
-    photoUrl: 'https://api.adorable.io/avatars/200/greenik.png',
-    info: '3 wolf moon paleo unicorn, activated charcoal cronut kale chips blog subway tile skateboard next level coloring book cold-pressed bicycle rights williamsburg.',
+    photoUrl: KamilZImg,
+    info: 'Programista z kilkuletnim doświadczeniem zawodowym. Od backendu w Pythonie po front w Angularze. Pasjonat nowych technologii, podróży oraz gotowania.',
     links: ['https://github.com/greenik', 'https://www.linkedin.com/in/kamilzielinski1/']
   }];
 

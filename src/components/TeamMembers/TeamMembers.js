@@ -16,8 +16,8 @@ function TeamMembers({ members }) {
             </Row>
             <Row>
                 {members.map((element, index) =>
-                    <Col md={12} lg={6}>
-                        <TeamMember key={`team-member-${index}`} {...element} />
+                    <Col md={12} lg={6} key={`team-member-${index}`}>
+                        <TeamMember {...element} />
                     </Col>
                 )}
             </Row>

@@ -12,7 +12,7 @@ const ProjectInfo = ({ imageUrl, projectTitle, projectDescription, projectUrl })
 		<Container className="project-info mt-5 mb-5" id="project-info">
 			<Row className="no-gutters position-relative align-items-center">
 				<Col xs={12} md={6} className="p-4 p-md-6">
-					<Image src={imageUrl} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="..." />
+					<Image src={imageUrl} className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Project screenshot" />
 				</Col>
 				<Col xs={12} md={6} className="pl-md-6">
 					<Row className="justify-content-center p-4">
