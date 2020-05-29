@@ -8,6 +8,7 @@ import ProjectInfo from './components/ProjectInfo';
 import TeamMembers from './components/TeamMembers';
 
 import KamilZImg from './images/kamilz.jpeg';
+import PLImg from './images/PLimg.jpg';
 
 import './App.scss';
 
@@ -27,9 +28,9 @@ const App = () => {
   }, {
     firstName: 'Piotr',
     lastName: 'Łosiak',
-    photoUrl: 'https://api.adorable.io/avatars/200/moose96.png',
-    info: 'Gluten-free four dollar toast ugh, sartorial yr chillwave taxidermy deep v vinyl photo booth raclette.',
-    links: ['https://github.com/moose96', 'https://www.linkedin.com/in/moose96/']
+    photoUrl: PLImg,
+    info: 'Programowanie to moje hobby. Interesuje mnie głównie frontend, szczególnie w React, ale też backend w Javie i C++. Pasjonuję się także muzyką, dźwiękiem, elektroniką i fotografią.',
+    links: ['https://github.com/moose96', 'https://www.linkedin.com/in/piotrlosiak/']
   }, {
     firstName: 'Marcin',
     lastName: 'Wijas',
