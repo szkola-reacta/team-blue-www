@@ -19,7 +19,7 @@ The project uses:
 
 [node-sass] (https://github.com/sass/node-sass/blob/master/LICENSE)
 
-[jest] (https://github.com/facebook/jest/blob/master/LICENSE)
+[jest] (https://github.com/testing-library/jest-dom/blob/master/LICENSE)
 
 [user-event] (https://github.com/testing-library/user-event/blob/master/LICENSE)
 
